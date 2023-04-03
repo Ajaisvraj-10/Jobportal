@@ -7,7 +7,7 @@ from django.contrib.auth.models import AbstractUser
 class Mainuser(AbstractUser):
     gender_choices = (
         ('gender','Gender'),
-        ('male','Male'),
+        ('male','Male'), 
         ('female','Female')
     )
     phone = models.CharField(max_length=11)
