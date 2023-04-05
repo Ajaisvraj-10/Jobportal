@@ -220,6 +220,33 @@
         <!-- Category End -->
 
 
+
+
+
+        <div class="container">
+            <h1>{{jobs.name}}</h1>
+    <!-- <h2>{{jobs.name}}</h2> -->
+    {% if jobs.profile %}
+
+    <img src="{{jobs.profile.url}}" alt="AVR_IMAGES" height="500px" />
+
+    {% endif %}
+
+    {% if jobs.cv_uploads %}
+
+
+    <img src="{{jobs.cv_upload.url}}" alt="AVR_IMAGES" height="500px" />
+
+
+    {% endif %}
+
+        </div>
+
+
+
+
+
+
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">

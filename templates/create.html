@@ -4,13 +4,22 @@
 
 {% block content %}
 
-<form method="post" enctype="multipart/form-data">
+<div class="container">
 
-  <input type="text" name="name">
-  <input type="text">
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+ <label>Name</label> <input type="text" name="name"><br><br>
+ <label>Domain</label><input type="text" name="domain"><br><br>
+ <label>About</label> <textarea name="about"></textarea><br><br>
+ <label>Email</label> <input type="email" name="email"><br><br>
+ <label>Add Profile</label> <input type="file" name="profile"><br><br>
+ <label>Upload CV</label> <input type="file" name="cv_upload"><br><br>
+ <input type="submit" value="Update Profile"><br>
 
 
 </form>
+</div>
 
 
 

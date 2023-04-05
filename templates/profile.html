@@ -5,7 +5,15 @@
 
 {% block content %}
 
+{% for jobs in jobs %}
 
+<a href="{% url 'company_register' jobs.id %}">{{jobs.name}}</a>
+<a href="{% url 'company_register' jobs.id %}">{{jobs.domain}}</a>
+<a href="{% url 'company_register' jobs.id %}">{{jobs.about}}</a>
+<a href="{% url 'company_register' jobs.id %}">{{jobs.email}}</a>
+<a href="{% url 'company_register' jobs.id %}">{{jobs.name}}</a>
+
+{% endfor %}
 
 
 

@@ -47,6 +47,7 @@
                         {% endif %}
                         {% if request.user.is_authenticated %}
                         <a href="{% url 'logout' %}" class="nav-item nav-link active">Logout</a>
+                        <a href="{% url 'profile' %}" class="nav-item nav-link active">Profile</a>
                         {% else %}
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Register as</a>
@@ -71,7 +72,7 @@
                     </div>
                     <div>
 
-                        <button onclick="navigate()"  class="btn btn-secondary   px-lg-3 d-none d-lg-block">My Profile</button>
+                        <button onclick="navigate()"  class="btn btn-secondary   px-lg-3 d-none d-lg-block">Update Profile</button>
                     </div>
                 </div>
             </nav>
